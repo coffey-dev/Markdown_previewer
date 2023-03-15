@@ -27,16 +27,16 @@ function updatePreview(){
 
 function setDefault(){
     let defaultText = `\
-# Useful programmer markdown preview
-## a markdown previewer
-[Learn more about Useful Programmer.org] (http://www.usefulprogrammer.org)
+# Example of header (H1 size text)
+## Example of sub-header (H2 size text)
+[Example of a link] (http://www.freecodecamp.org/scoffey)
     
 <dl>
-<dt>Definition list</dt>
-<dd>Is something people use sometimes.</dd>
+<dt>Example of a first list item</dt>
+<dd>First description</dd>
 
-<dt>Markdown in HTML</dt>
-<dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+<dt>Example of a second list item</dt>
+<dd>Second description</dd>
 </dl>
 
 \`This is an example of inline code\`
@@ -57,7 +57,7 @@ function exampleOf(){
 
 > This is an example of block quote
 
-![Usegful Programmer](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![Example of an image](https://i.ibb.co/C591J5j/Foto-Perfil.jpg)
 
 **This is an example of Bolded Text**
 
@@ -77,7 +77,7 @@ previewElement.innerHTML = marked(defaultText);
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center text-white bg-success my-3"> 
-    <h1>Markdown previewer by useful programmer</h1>
+    <h1>Markdown previewer</h1>
 </div>
 </div>
 <div class="row">
