@@ -76,18 +76,20 @@ previewElement.innerHTML = marked(defaultText);
   <body onload="setDefault()">
     <div class="container-fluid">
         <div class="row">
-            <div class="col text-center text-white bg-success"> 
+            <div class="col text-center text-white bg-success my-3"> 
     <h1>Markdown previewer by useful programmer</h1>
 </div>
 </div>
 <div class="row">
-    <div class="col-6 bg-primary">
-        <p>The editor will be here</p>
-        <textarea id="editor" onkeyup="updatePreview()"></textarea>
+    <div class="col-6 bg-primary d-flex flex-column">
+        <h2 class="text-white text-center my-3">Editor</h2>
+        <div class="form-group flex-grow-1 d-flex flex-column">
+        <textarea id="editor" onkeyup="updatePreview()" class="form-control flex-grow-1"></textarea>
+    </div>
     </div>
 
     <div class="col-6 bg-danger">
-        <p>The markdown previewer will be here</p>
+        <h2 class="text-white text-center my-3">Preview</h2>
         <div id="preview"></div>
     </div>
 
